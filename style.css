@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+    flex-direction: column;
+}
+.preloader img{
+    border-radius: 30px;
+}
+.preloader p{
+    color:  white;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/couple-1210023.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    z-index: 2;
+    overflow-x: hidden !important;
+}
+.container::after{
+    content: '';
+    left: 0;
+    top: 0;
+    background-color:rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+    position:absolute;
+    opacity: .7;
+    z-index: -1;
+}
+.logo{
+    position: relative;
+    color: #fff;
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.content{
+    top:50%;
+    position: absolute;
+    transform:translateY(-50%);
+    color: white;
+    margin-left: 40px;
+    text-transform: capitalize;
+}
+.content h1{
+    font-weight: 600;
+    font-size: 44px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.content span{
+    color: tomato;
+}
+.content button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 5px;
+}
+.launch-time{
+    display: flex;
+   
+}
+.launch-time div{
+    flex-basis: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 8px;
+}
